@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Firstrailsproject</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Firstrailsproject</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
+	<%= render 'layouts/header' %>
 
-<%= yield %>
+	<div class="container">
+	<%= yield %>
 
+	<div class="footer">
+		<small>
+			You've found my homepage!
+			<a href="http://themusicbuffet.tumblr.com">The Music Buffet</a>
+		</small>
+	</div>
+</div>
 </body>
 </html>
